@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 快递 -->
+    <color name="blue_kuaidi100">#ff317ee7</color>
+    <color name="search_text_blue">#ff3399ff</color>
+    <color name="grey_f0f0f0">#fff0f0f0</color>
+    <color name="transparent">#00000000</color>
+    <color name="write">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gridview_item_normal1">#669999</color>
+    <color name="gridview_item_normal2">#74A474</color>
+    <color name="gridview_item_normal3">#009999</color>
+    <color name="gridview_item_normal4">#5F9EA0</color>
+    <color name="gridview_item_normal6">#388E8E</color>
+    <color name="gridview_item_normal5">#2E8B57</color>
+    <color name="gridview_item_normal7">#668B8B</color>
+    <color name="gridview_item_normal8">#33CC99</color>
+    <color name="gridview_item_pressed">#00CD00</color>
+    <color name="while_bg_FBFBFB">#fffbfbfb</color>
+    <color name="start_station_icon">#ff888888</color>
+    <color name="trains_icon_color">#ff000000</color>
+    <color name="grey_666666">#ff666666</color>
+    <color name="while_bg_F1F1F1">#fff1f1f1</color>
+    <color name="grey_888888">#ff888888</color>
+    <color name="train_base_line_time">#ff707070</color>
+    <color name="black_333333">#ff333333</color>
+    <color name="black_444444">#ff444444</color>
+    <color name="grey_999999">#ff999999</color>
+    <color name="white">#ffffffff</color>
+    <color name="_dan">#ffc9c9c9</color>
+    <color name="train_listview_item2">#ffeeeeee</color>
+    <color name="gray_time">#ff999999</color>
+    <color name="black_call">#ff000000</color>
+    <color name="train_cc_search_item_s">#ffeeeeee</color>
+    <color name="green_669900">#ff669900</color>
+    <color name="note_bg1">#63B8FF</color>
+    <color name="note_bg2">#548B54</color>
+    <color name="note_bg3">#6495ED</color>
+    <color name="note_bg4">#43CD80</color>
+    <color name="note_bg5">#2F4F4F</color>
+    <color name="_black">#ff333333</color>
+    <color name="gray">#ff808080</color>
+    <color name="while_bg_DDDDDD">#ffdddddd</color>
+    <color name="_red">#ffff0000</color>
+    <color name="search_n">#EEEEE0</color>
+    <color name="search_p">#CD661D</color>
+    <color name="search_normal1">#EEEEE0</color>
+    <color name="search_normal2">#F8F8FF</color>
+    <color name="listview_item_press">#20B2AA</color>
+    <color name="listview_item_normal">#ffffff</color>
+    <color name="item_p">#25B9B9</color>
+
+</resources>

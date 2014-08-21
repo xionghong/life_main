@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/containerViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000" >
+
+        <include layout="@layout/fragment_viewpager" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/containerBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/fragment_bottom" />
+    </FrameLayout>
+
+    <com.example.lifehelp_main.weather.MyFrameLayout
+        android:id="@+id/containerListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/containerBottom" >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" >
+        </ListView>
+    </com.example.lifehelp_main.weather.MyFrameLayout>
+
+</RelativeLayout>

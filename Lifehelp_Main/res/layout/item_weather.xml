@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp" >
+    
+    <TextView 
+        android:id="@+id/weather_item_dateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#68838B"
+        android:textSize="15sp"
+        android:text="7月4日 周五"
+        />
+	<TextView 
+	    android:id="@+id/weather_item_temTv"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="19~24°"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#cc3D3D3D"
+        android:layout_alignParentRight="true"
+	    />
+	<TextView 
+	    android:id="@+id/weather_item_weatherTv"
+	    android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="阴转雷阵雨"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#aa444444"
+        android:layout_toLeftOf="@id/weather_item_temTv"
+        android:layout_toRightOf="@id/weather_item_dateTv"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical|right"
+	    />
+	
+</RelativeLayout>

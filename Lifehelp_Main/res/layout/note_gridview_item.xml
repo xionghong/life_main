@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/btn_color_item_pressed"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" 
+        >
+
+        <TextView
+            android:id="@+id/timeTv_note_item_gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2013-08-25,04:22"
+            android:textColor="#68228B"
+            android:textSize="12dp" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_divider"
+            android:layout_below="@id/timeTv_note_item_gridview" />
+
+        <TextView
+            android:id="@+id/titleTv_note_item_gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text="生生世世事实上身上生生世世"
+            android:textColor="#000000"
+            android:textSize="11dp" />
+        <RelativeLayout 
+            android:layout_width="170dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/deleteBtn_note_gridview_item"
+            >
+        <CheckBox
+            android:id="@+id/checkbox_note_item_gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:button="@drawable/note_checkbox_selector"
+            android:layout_alignParentRight="true"
+            android:enabled="false"
+            android:focusable="false"
+            android:layout_marginLeft="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

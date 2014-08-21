@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    <FrameLayout
+        android:id="@+id/titleContainer_note_main"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp" >
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/note_main_title_normal" />
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/note_main_title_deletenote" />
+    </FrameLayout>
+
+    <com.example.lifehelp_main.notebook.MyLinearLayout
+        android:id="@+id/deleteLayout_note_main"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/note_btn_delete_selector"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_note_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/deleteLayout_note_main"
+        android:layout_below="@id/titleContainer_note_main" >
+        <ListView
+            android:id="@+id/listView_note_main"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:divider="@drawable/list_divider" 
+            android:background="#ffffff"/>
+        <GridView
+            android:id="@+id/gridView_note_main"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:numColumns="2"
+            android:horizontalSpacing="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:verticalSpacing="10dp"
+            android:visibility="gone"/>
+        <include 
+            layout="@layout/note_empty_create"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+    </FrameLayout>
+</RelativeLayout>

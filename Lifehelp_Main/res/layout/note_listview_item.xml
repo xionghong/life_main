@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/note_listview_item_selector" >
+
+    <TextView
+        android:id="@+id/titleTv_note_item_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:text="第一个笔记"
+        android:textColor="#474747"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/timeTv_note_item_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/titleTv_note_item_listview"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="8月24日"
+        android:textColor="#6A5ACD" />
+
+    <RelativeLayout
+        android:id="@+id/deleteBtn_note_listview_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <CheckBox
+            android:id="@+id/checkbox_note_item_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:clickable="false"
+            android:button="@drawable/note_checkbox_selector"
+            android:focusable="false"/>
+    </RelativeLayout>
+
+</RelativeLayout>

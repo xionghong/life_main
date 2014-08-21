@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootView" >
+    
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dp"
+	    android:background="@color/blue_kuaidi100"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:text="选择快递公司"
+			android:textColor="@color/write"
+			android:textSize="22sp"
+			android:layout_centerInParent="true"
+	        />
+
+	    <ImageButton
+	        android:id="@+id/btn_back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:src="@drawable/selector_btn_back"
+	        android:background="@color/transparent" />
+	    <ImageButton
+	        android:id="@+id/btn_fav"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentRight="true"
+	        android:src="@drawable/selector_btn_fav"
+	        android:background="@color/transparent" 
+	        />
+	    <Button 
+	        android:id="@+id/btn_complete"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@id/btn_fav"
+	        android:layout_alignRight="@id/btn_fav"
+	        android:layout_alignTop="@id/btn_fav"
+	        android:layout_alignBottom="@id/btn_fav"
+	        android:text="完成"
+	        android:textColor="@color/write"
+	        android:textSize="20sp"
+	        android:background="#00000000"
+	        android:visibility="invisible"
+	        />
+	</RelativeLayout>
+	
+	<TextView 
+	    android:id="@+id/tv_search"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="快速搜索快递公司"
+	    android:drawableLeft="@drawable/tab_search_normal_small"
+	    android:background="@drawable/editor_bg"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:layout_marginTop="10dp"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="10dp"
+	    android:drawablePadding="5dp"
+	    />
+	<ExpandableListView 
+	    android:id="@+id/expandableListView_choose_company"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:groupIndicator="@null"
+	    ></ExpandableListView>
+</LinearLayout>

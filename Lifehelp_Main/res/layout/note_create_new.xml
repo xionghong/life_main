@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/edit_title_blue" >
+
+        <Button
+            android:id="@+id/saveBtn_note_create_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/note_save_btn_selector"
+            android:text="保存" />
+
+        <ImageView
+            android:id="@+id/back_note_create_new"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_back_note_selector" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/back_note_create_new" >
+
+            <TextView
+                android:id="@+id/dateTV_note_create_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="8 月 22 日"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/timeTV_note_create_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/dateTV_note_create_new"
+                android:text="0:41"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/weekday_note_create_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/timeTV_note_create_new"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/timeTV_note_create_new"
+                android:text="星期四"
+                android:textColor="#000000" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/edit_blue" >
+		
+        <EditText
+            android:id="@+id/et_note_create_new"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:gravity="left"
+            android:hint="写点什么.."
+            android:minHeight="300dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+        </EditText>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FBFBFB" >
+
+    <EditText
+        android:id="@+id/searchEt_number_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edittext_number"
+        android:gravity="center_vertical"
+        android:hint="请输入关键字"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="#444444" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp">
+    </EditText>
+
+    <ListView
+        android:id="@+id/listView_number_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/searchEt_number_dialog"
+        android:layout_marginTop="7dp"
+        android:background="#EEE8CD"
+        android:cacheColorHint="#00000000"
+        android:fastScrollEnabled="true" >
+    </ListView>
+
+</RelativeLayout>

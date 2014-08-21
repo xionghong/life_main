@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_item"
+    >
+    
+	<TextView 
+	    android:id="@+id/tv_item_child"
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dp"
+		android:text="申通快递"
+		android:textColor="@color/black"
+		android:paddingLeft="20dp"
+		android:gravity="center_vertical"
+		android:textSize="22sp"
+	    />
+
+	<ImageView
+	    android:id="@+id/iv_item_child"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:layout_alignTop="@id/tv_item_child"
+	    android:layout_alignBottom="@id/tv_item_child"
+	    android:src="@drawable/child_item_favorite" 
+	    android:layout_marginRight="40dp"
+	    android:visibility="gone"
+	    />
+	
+</RelativeLayout>
